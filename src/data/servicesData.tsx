@@ -31,7 +31,7 @@ export const servicesData = [
         <path d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" />
       </svg>
     ),
-    fullDescription: "First impressions matter, especially for businesses. Our commercial window cleaning service helps maintain the professional appearance of your storefront, office, or facility. We understand the unique challenges of commercial properties and offer flexible scheduling, including after-hours service to minimize disruption to your business operations. Our team is equipped to handle buildings of all sizes, using professional-grade equipment for safe and efficient cleaning.",
+    fullDescription: "First impressions matter, especially for businesses. Our commercial window cleaning service helps maintain the professional appearance of your storefront, office, or facility. We understand the unique challenges of commercial properties and offer flexible scheduling, including after-hours service to minimize disruption to your business operations.",
     benefits: [
       "Enhance your business appearance and create positive impressions",
       "Flexible scheduling including evenings and weekends",
