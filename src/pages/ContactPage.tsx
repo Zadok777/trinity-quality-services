@@ -1,24 +1,17 @@
-
 import React from "react";
 import { Helmet } from "react-helmet";
 import PageBanner from "@/components/ui/PageBanner";
 import ContactForm from "@/components/ui/ContactForm";
 import { Phone, Mail, Clock, MapPin } from "lucide-react";
-
 const ContactPage = () => {
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Contact Us | Trinity Quality Services | Window Cleaning</title>
         <meta name="description" content="Contact Trinity Quality Services for professional window cleaning in Hillsborough County, Florida. Request a quote, ask questions, or schedule service." />
         <meta name="keywords" content="contact window cleaning service, window cleaning quote, Hillsborough County window cleaners, schedule window cleaning" />
       </Helmet>
 
-      <PageBanner 
-        title="Contact Us" 
-        description="Get in touch with our team for a free estimate or to learn more about our services"
-        backgroundImage="/images/contact-banner.jpg"
-      />
+      <PageBanner title="Contact Us" description="Get in touch with our team for a free estimate or to learn more about our services" backgroundImage="/images/contact-banner.jpg" />
 
       {/* Contact Info and Form */}
       <section className="section-padding bg-white">
@@ -62,7 +55,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-trinity-navy">Email</h3>
-                    <p className="text-gray-700">info@trinityqualityservices.com</p>
+                    <p className="text-gray-700">tqs.david@gmail.com</p>
                     <p className="text-sm text-gray-500 mt-1">We aim to respond within 24 hours</p>
                   </div>
                 </div>
@@ -95,16 +88,9 @@ const ContactPage = () => {
               <div>
                 <h3 className="font-semibold text-lg text-trinity-navy mb-4">Our Service Area</h3>
                 <div className="rounded-lg overflow-hidden shadow-md h-96">
-                  <iframe 
-                    title="Service Area Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224443.03467196977!2d-82.66373548178259!3d27.9947148759226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sHillsborough%20County%2C%20FL!5e0!3m2!1sen!2sus!4v1682446866040!5m2!1sen!2sus"
-                    width="100%" 
-                    height="100%" 
-                    style={{ border: 0 }} 
-                    allowFullScreen 
-                    loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                  <iframe title="Service Area Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224443.03467196977!2d-82.66373548178259!3d27.9947148759226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sHillsborough%20County%2C%20FL!5e0!3m2!1sen!2sus!4v1682446866040!5m2!1sen!2sus" width="100%" height="100%" style={{
+                  border: 0
+                }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
             </div>
@@ -169,8 +155,6 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default ContactPage;
