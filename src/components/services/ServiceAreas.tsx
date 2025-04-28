@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 import ServiceAreaCard from './ServiceAreaCard';
 
 const serviceAreas = [
-  { title: "Tampa", description: "Providing window cleaning and exterior services throughout Tampa." },
-  { title: "Brandon", description: "Residential and commercial services in Brandon." },
-  { title: "Temple Terrace", description: "Complete exterior cleaning solutions for Temple Terrace residents." },
-  { title: "Plant City", description: "Servicing Plant City with quality window cleaning." },
-  { title: "Riverview", description: "Professional exterior cleaning for Riverview homes and businesses." },
-  { title: "Valrico", description: "Serving Valrico with expert window cleaning services." },
-  { title: "Apollo Beach", description: "Window cleaning solutions for Apollo Beach properties." },
-  { title: "Sun City Center", description: "Quality cleaning services in Sun City Center." },
-  { title: "And More!", description: "Contact us to see if we service your area." }
+  { title: "Hillsborough County", description: "Complete exterior and interior cleaning services throughout Hillsborough County." },
+  { title: "Hernando County", description: "Professional window cleaning and exterior services in Hernando County." },
+  { title: "Pasco County", description: "Quality cleaning solutions for residential and commercial properties in Pasco County." },
+  { title: "Polk County", description: "Comprehensive cleaning services for Polk County residents and businesses." },
+  { title: "Pinellas County", description: "Expert window cleaning and pressure washing services in Pinellas County." },
+  { title: "Manatee County", description: "Professional cleaning solutions for Manatee County properties." },
+  { title: "Sarasota County", description: "Serving Sarasota County with premium cleaning services." },
+  { title: "Desoto County", description: "Quality exterior and interior cleaning for Desoto County properties." },
+  { title: "Hardee County", description: "Professional window cleaning and pressure washing in Hardee County." }
 ];
 
 const ServiceAreas = () => {
@@ -24,7 +24,7 @@ const ServiceAreas = () => {
             Our Service Areas
           </h2>
           <p className="text-gray-700 text-lg mb-8 text-center">
-            Trinity Quality Services proudly serves residential and commercial clients throughout Hillsborough County and surrounding areas.
+            Trinity Quality Services proudly serves residential and commercial clients throughout Central Florida's Gulf Coast region.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
