@@ -79,7 +79,7 @@ const ContactPage = () => {
                   <div>
                     <h3 className="font-semibold text-lg text-trinity-navy">Service Area</h3>
                     <p className="text-gray-700">Serving Hillsborough County and surrounding areas including:</p>
-                    <p className="text-gray-700">Tampa, Brandon, Plant City, Riverview, Valrico, Apollo Beach, Sun City Center, Ruskin, Temple Terrace, and more.</p>
+                    
                   </div>
                 </div>
               </div>
