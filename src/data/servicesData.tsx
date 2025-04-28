@@ -39,7 +39,8 @@ export const servicesData = [
       "Commercial-grade equipment for multi-story buildings",
       "Consistent, reliable service with satisfaction guarantee"
     ],
-    image: "/images/commercial-window-cleaning.jpg"
+    image: "/images/commercial-window-cleaning.jpg",
+    youtubeId: "B8IP5rOZQNM"
   },
   {
     id: "pressure-washing",
