@@ -5,7 +5,6 @@ import ServiceCard from "@/components/ui/ServiceCard";
 import TestimonialCard from "@/components/ui/TestimonialCard";
 import { servicesData } from "@/data/servicesData";
 import { testimonialsData } from "@/data/testimonialsData";
-
 const HomePage = () => {
   return <>
       <Helmet>
@@ -58,15 +57,8 @@ const HomePage = () => {
               </Link>
             </div>
             <div className="relative">
-              <img 
-                src="/lovable-uploads/29552300-f3a8-4c72-b623-2fa2fc0e81a6.png" 
-                alt="Trinity Quality Services - Our comprehensive cleaning services" 
-                className="rounded-lg shadow-xl w-full h-auto object-cover" 
-              />
-              <div className="absolute -bottom-6 -left-6 bg-trinity-light rounded-lg p-6 shadow-lg text-white">
-                <div className="text-4xl font-bold mb-1">16+</div>
-                <div className="text-lg">Years in Business</div>
-              </div>
+              <img src="/lovable-uploads/29552300-f3a8-4c72-b623-2fa2fc0e81a6.png" alt="Trinity Quality Services - Our comprehensive cleaning services" className="rounded-lg shadow-xl w-full h-auto object-cover" />
+              
             </div>
           </div>
         </div>
