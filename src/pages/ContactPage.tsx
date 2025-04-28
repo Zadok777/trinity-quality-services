@@ -78,7 +78,8 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-trinity-navy">Service Area</h3>
-                    <p className="text-gray-700">Serving Hillsborough County and surrounding areas including:</p>
+                    <p className="text-gray-700">Serving The Following Counties: 
+Hillsborough, Pasco, Pinellas, Polk, Hardee, Manatee, Sarasota, Desoto, Hernando</p>
                     
                   </div>
                 </div>
