@@ -39,7 +39,7 @@ export const servicesData = [
       "Commercial-grade equipment for multi-story buildings",
       "Consistent, reliable service with satisfaction guarantee"
     ],
-    image: "/images/commercial-window-cleaning.jpg",
+    image: "/lovable-uploads/92d011bf-93fc-4b24-99e2-7b8c51f61ef1.png",
     youtubeId: ""
   },
   {
