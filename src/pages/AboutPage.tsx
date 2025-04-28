@@ -1,25 +1,18 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import PageBanner from "@/components/ui/PageBanner";
 import TestimonialCard from "@/components/ui/TestimonialCard";
 import { testimonialsData } from "@/data/testimonialsData";
-
 const AboutPage = () => {
-  return (
-    <>
+  return <>
       <Helmet>
         <title>About Trinity Quality Services | Window Cleaning Hillsborough County</title>
         <meta name="description" content="Learn about Trinity Quality Services - 16 years in business with 26 years of window cleaning experience serving Hillsborough County and surrounding areas in Florida." />
         <meta name="keywords" content="window cleaning company, about Trinity Quality Services, experienced window cleaners Florida, Hillsborough County window cleaning company" />
       </Helmet>
 
-      <PageBanner 
-        title="About Us" 
-        description="Over 16 years of trusted service in Hillsborough County"
-        backgroundImage="/images/about-banner.jpg"
-      />
+      <PageBanner title="About Us" description="Over 16 years of trusted service in Hillsborough County" backgroundImage="/images/about-banner.jpg" />
 
       {/* Company History */}
       <section className="section-padding bg-white">
@@ -29,40 +22,20 @@ const AboutPage = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-trinity-navy mb-6 heading-underline">
                 Our Story
               </h2>
-              <p className="text-gray-700 mb-4">
-                Trinity Quality Services was founded in 2008 by John Smith, who had already accumulated a decade of window cleaning experience. What started as a one-man operation has grown into one of the most respected exterior cleaning companies in Hillsborough County.
-              </p>
-              <p className="text-gray-700 mb-4">
-                With 16 years in business and 26 years of industry experience, we've built our reputation on delivering exceptional results and outstanding customer service. Our commitment to quality, integrity, and professionalism has earned us a loyal customer base throughout Tampa, Brandon, Plant City, and surrounding areas.
-              </p>
+              <p className="text-gray-700 mb-4">Trinity Quality Services was founded in 2008 by David Santiago, who had already accumulated a decade of window cleaning experience alone. </p>
+              <p className="text-gray-700 mb-4">With 16 years in business and 26 years of industry experience, we've built our reputation on delivering exceptional results and outstanding customer service. Our commitment to quality, integrity, and professionalism has earned us a loyal customer base.</p>
               <p className="text-gray-700">
                 Today, Trinity Quality Services continues to be a family-owned and operated business, maintaining the same values and commitment to excellence that we started with. We take pride in enhancing the appearance and value of homes and businesses throughout our community.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <img 
-                  src="/images/about-1.jpg" 
-                  alt="Trinity Quality Services team member cleaning windows" 
-                  className="rounded-lg shadow-md w-full h-auto object-cover"
-                />
-                <img 
-                  src="/images/about-2.jpg" 
-                  alt="Window cleaning in progress" 
-                  className="rounded-lg shadow-md w-full h-auto object-cover"
-                />
+                <img src="/images/about-1.jpg" alt="Trinity Quality Services team member cleaning windows" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                <img src="/images/about-2.jpg" alt="Window cleaning in progress" className="rounded-lg shadow-md w-full h-auto object-cover" />
               </div>
               <div className="mt-8 space-y-4">
-                <img 
-                  src="/images/about-3.jpg" 
-                  alt="Finished window cleaning project" 
-                  className="rounded-lg shadow-md w-full h-auto object-cover"
-                />
-                <img 
-                  src="/images/about-4.jpg" 
-                  alt="Trinity Quality Services van" 
-                  className="rounded-lg shadow-md w-full h-auto object-cover"
-                />
+                <img src="/images/about-3.jpg" alt="Finished window cleaning project" className="rounded-lg shadow-md w-full h-auto object-cover" />
+                <img src="/images/about-4.jpg" alt="Trinity Quality Services van" className="rounded-lg shadow-md w-full h-auto object-cover" />
               </div>
             </div>
           </div>
@@ -188,11 +161,7 @@ const AboutPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="/images/team-1.jpg" 
-                alt="John Smith - Founder & Owner" 
-                className="w-full h-64 object-cover object-center"
-              />
+              <img src="/images/team-1.jpg" alt="John Smith - Founder & Owner" className="w-full h-64 object-cover object-center" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-trinity-navy mb-1">John Smith</h3>
                 <p className="text-trinity-light font-medium mb-3">Founder & Owner</p>
@@ -203,11 +172,7 @@ const AboutPage = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="/images/team-2.jpg" 
-                alt="Sarah Johnson - Operations Manager" 
-                className="w-full h-64 object-cover object-center"
-              />
+              <img src="/images/team-2.jpg" alt="Sarah Johnson - Operations Manager" className="w-full h-64 object-cover object-center" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-trinity-navy mb-1">Sarah Johnson</h3>
                 <p className="text-trinity-light font-medium mb-3">Operations Manager</p>
@@ -218,11 +183,7 @@ const AboutPage = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="/images/team-3.jpg" 
-                alt="Michael Rogers - Lead Technician" 
-                className="w-full h-64 object-cover object-center"
-              />
+              <img src="/images/team-3.jpg" alt="Michael Rogers - Lead Technician" className="w-full h-64 object-cover object-center" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-trinity-navy mb-1">Michael Rogers</h3>
                 <p className="text-trinity-light font-medium mb-3">Lead Technician</p>
@@ -248,15 +209,7 @@ const AboutPage = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonialsData.map(testimonial => (
-              <TestimonialCard
-                key={testimonial.id}
-                quote={testimonial.quote}
-                author={testimonial.author}
-                location={testimonial.location}
-                rating={testimonial.rating}
-              />
-            ))}
+            {testimonialsData.map(testimonial => <TestimonialCard key={testimonial.id} quote={testimonial.quote} author={testimonial.author} location={testimonial.location} rating={testimonial.rating} />)}
           </div>
         </div>
       </section>
@@ -277,8 +230,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default AboutPage;
