@@ -90,11 +90,10 @@ export const servicesData = [
         <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2z" clipRule="evenodd" />
       </svg>
     ),
-    fullDescription: "Our new construction clean up service provides comprehensive cleaning for newly built or renovated properties. We ensure all construction debris, dust, and residues are thoroughly removed, making the space ready for immediate occupancy. Our service includes detailed cleaning of windows, frames, tracks, screens, and all surfaces affected by construction work.",
+    fullDescription: "We offer construction clean up for all glass surfaces. Whether they are new installs or remodels, we will make the glass shine.",
     benefits: [
-      "Complete removal of construction debris and dust",
       "Detailed cleaning of all windows, frames, and tracks",
-      "Professional cleaning of all surfaces and fixtures",
+      "Professional cleaning of all surfaces",
       "Final inspection to ensure move-in ready condition",
       "Flexible scheduling to meet construction timelines"
     ],
