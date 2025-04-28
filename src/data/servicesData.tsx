@@ -18,7 +18,7 @@ export const servicesData = [
       "Protection for window frames, sills, and surrounding areas",
       "Flexible scheduling to accommodate your busy lifestyle"
     ],
-    image: "/images/residential-window-cleaning.jpg"
+    image: "/lovable-uploads/f1aff985-f154-47e8-bb10-a34ff5afc017.png"
   },
   {
     id: "commercial",
