@@ -25,7 +25,7 @@ const ServicesPage = () => {
 
       <PageBanner 
         title="Our Services" 
-        description="Professional exterior cleaning services for residential and commercial properties"
+        description="Professional interior and exterior cleaning services for residential and commercial properties"
         backgroundImage="/images/services-banner.jpg"
       />
 
