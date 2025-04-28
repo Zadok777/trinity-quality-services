@@ -45,9 +45,7 @@ const HomePage = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-trinity-navy mb-6 heading-underline">
                 Welcome to Trinity Quality Services
               </h2>
-              <p className="text-gray-700 mb-4">
-                Since 2008, Trinity Quality Services has been providing exceptional window cleaning and exterior maintenance services to homeowners and businesses throughout Hillsborough County and surrounding areas.
-              </p>
+              <p className="text-gray-700 mb-4">Since 2008, Trinity Quality Services has been providing exceptional window cleaning and exterior maintenance services to homeowners and businesses.</p>
               <p className="text-gray-700 mb-4">
                 With 26 years of industry experience, we've built our reputation on delivering superior results and customer satisfaction. Our team is committed to excellence, integrity, and quality in every project we undertake.
               </p>
