@@ -59,7 +59,7 @@ export const servicesData = [
       "Prepare surfaces for painting or sealing",
       "Improve curb appeal and property value"
     ],
-    image: "/images/pressure-washing.jpg"
+    image: "/lovable-uploads/b7d941e0-48a1-402e-be2f-1b66ffc32fd0.png"
   },
   {
     id: "gutter-cleaning",
