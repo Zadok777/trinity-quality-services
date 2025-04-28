@@ -50,10 +50,10 @@ const ServiceDetail = ({ service, isReversed }: ServiceDetailProps) => {
           Request a Quote
         </Link>
       </div>
-      <div className="h-full">
+      <div className="h-full flex items-center justify-center">
         {service.youtubeId ? (
-          <div className="rounded-lg shadow-xl overflow-hidden">
-            <AspectRatio ratio={9/16} className="bg-black">
+          <div className="rounded-lg shadow-xl overflow-hidden w-full">
+            <AspectRatio ratio={16/9} className="bg-black">
               <iframe 
                 src={`https://www.youtube.com/embed/${service.youtubeId}?autoplay=0&controls=1&mute=1&rel=0&modestbranding=1&playsinline=1`}
                 title={service.title}
@@ -64,13 +64,13 @@ const ServiceDetail = ({ service, isReversed }: ServiceDetailProps) => {
             </AspectRatio>
           </div>
         ) : service.video ? (
-          <div className="rounded-lg shadow-xl overflow-hidden">
+          <div className="rounded-lg shadow-xl overflow-hidden w-full max-w-2xl">
             <video 
               autoPlay 
               loop 
               muted 
               playsInline
-              className="w-full h-auto object-contain"
+              className="w-full h-auto"
             >
               <source src={service.video} type="video/mp4" />
               <img 
@@ -81,11 +81,11 @@ const ServiceDetail = ({ service, isReversed }: ServiceDetailProps) => {
             </video>
           </div>
         ) : (
-          <div className="rounded-lg shadow-xl overflow-hidden">
+          <div className="rounded-lg shadow-xl overflow-hidden w-full max-w-2xl">
             <img 
               src={service.image}
               alt={service.title} 
-              className="w-full h-auto object-cover"
+              className="w-full h-auto"
               loading="lazy"
             />
           </div>
