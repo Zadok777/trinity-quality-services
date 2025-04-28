@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -6,10 +5,8 @@ import ServiceCard from "@/components/ui/ServiceCard";
 import TestimonialCard from "@/components/ui/TestimonialCard";
 import { servicesData } from "@/data/servicesData";
 import { testimonialsData } from "@/data/testimonialsData";
-
 const HomePage = () => {
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Trinity Quality Services | Professional Window Cleaning in Hillsborough County</title>
         <meta name="description" content="Professional window cleaning services in Hillsborough County, Florida with 26 years of experience. Residential and commercial window cleaning services." />
@@ -18,7 +15,9 @@ const HomePage = () => {
 
       {/* Hero Section */}
       <section className="relative bg-trinity-navy text-white">
-        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: "url('/images/window-cleaning-hero.jpg')" }}></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{
+        backgroundImage: "url('/images/window-cleaning-hero.jpg')"
+      }}></div>
         <div className="relative container-custom min-h-[80vh] flex flex-col justify-center py-20">
           <div className="max-w-3xl animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -27,9 +26,7 @@ const HomePage = () => {
             <h2 className="text-2xl md:text-3xl font-medium mb-8 text-trinity-light">
               Integrity + Quality = Great Service
             </h2>
-            <p className="text-xl mb-8 max-w-2xl">
-              Serving Hillsborough County and surrounding areas with over 26 years of window cleaning experience.
-            </p>
+            <p className="text-xl mb-8 max-w-2xl">Serving Hillsborough County and surrounding areas with over 26 years of professional cleaning experience.</p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="btn-secondary">
                 Get Free Estimate
@@ -64,11 +61,7 @@ const HomePage = () => {
               </Link>
             </div>
             <div className="relative">
-              <img 
-                src="/images/window-cleaner.jpg" 
-                alt="Professional window cleaner at work" 
-                className="rounded-lg shadow-xl w-full h-auto object-cover"
-              />
+              <img src="/images/window-cleaner.jpg" alt="Professional window cleaner at work" className="rounded-lg shadow-xl w-full h-auto object-cover" />
               <div className="absolute -bottom-6 -left-6 bg-trinity-light rounded-lg p-6 shadow-lg text-white">
                 <div className="text-4xl font-bold mb-1">16+</div>
                 <div className="text-lg">Years in Business</div>
@@ -91,15 +84,7 @@ const HomePage = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {servicesData.slice(0, 3).map(service => (
-              <ServiceCard 
-                key={service.id}
-                title={service.title}
-                description={service.shortDescription}
-                icon={service.icon}
-                link={`/services#${service.id}`}
-              />
-            ))}
+            {servicesData.slice(0, 3).map(service => <ServiceCard key={service.id} title={service.title} description={service.shortDescription} icon={service.icon} link={`/services#${service.id}`} />)}
           </div>
           
           <div className="text-center mt-12">
@@ -211,15 +196,7 @@ const HomePage = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonialsData.slice(0, 3).map(testimonial => (
-              <TestimonialCard
-                key={testimonial.id}
-                quote={testimonial.quote}
-                author={testimonial.author}
-                location={testimonial.location}
-                rating={testimonial.rating}
-              />
-            ))}
+            {testimonialsData.slice(0, 3).map(testimonial => <TestimonialCard key={testimonial.id} quote={testimonial.quote} author={testimonial.author} location={testimonial.location} rating={testimonial.rating} />)}
           </div>
         </div>
       </section>
@@ -240,8 +217,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default HomePage;
