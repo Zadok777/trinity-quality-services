@@ -12,11 +12,11 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="text-trinity-navy font-heading">
-              <span className="text-2xl font-bold">Trinity</span>
-              <span className="text-trinity-light text-2xl font-bold">Quality</span>
-              <span className="text-sm block">Window Cleaning Services</span>
-            </div>
+            <img 
+              src="/lovable-uploads/e5b6db97-8e3c-4b45-ba86-45aec62feff8.png" 
+              alt="Trinity Quality Services" 
+              className="h-12"
+            />
           </Link>
 
           {/* Phone number - visible on medium screens and above */}
