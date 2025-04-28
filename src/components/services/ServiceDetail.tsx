@@ -9,6 +9,7 @@ interface ServiceDetailProps {
     fullDescription: string;
     benefits: string[];
     image: string;
+    video?: string;
   };
   isReversed?: boolean;
 }
@@ -48,11 +49,28 @@ const ServiceDetail = ({ service, isReversed }: ServiceDetailProps) => {
         </Link>
       </div>
       <div>
-        <img 
-          src={service.image}
-          alt={service.title} 
-          className="rounded-lg shadow-xl w-full h-auto object-cover"
-        />
+        {service.video ? (
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="rounded-lg shadow-xl w-full h-auto object-cover"
+          >
+            <source src={service.video} type="video/mp4" />
+            <img 
+              src={service.image} 
+              alt={service.title}
+              className="rounded-lg shadow-xl w-full h-auto object-cover" 
+            />
+          </video>
+        ) : (
+          <img 
+            src={service.image}
+            alt={service.title} 
+            className="rounded-lg shadow-xl w-full h-auto object-cover"
+          />
+        )}
       </div>
     </div>
   );

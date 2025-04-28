@@ -18,7 +18,8 @@ export const servicesData = [
       "Protection for window frames, sills, and surrounding areas",
       "Flexible scheduling to accommodate your busy lifestyle"
     ],
-    image: "/lovable-uploads/f1aff985-f154-47e8-bb10-a34ff5afc017.png"
+    image: "/lovable-uploads/f1aff985-f154-47e8-bb10-a34ff5afc017.png",
+    video: undefined
   },
   {
     id: "commercial",
