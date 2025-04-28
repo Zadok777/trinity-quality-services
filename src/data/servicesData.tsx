@@ -97,6 +97,6 @@ export const servicesData = [
       "Final inspection to ensure crystal-clear results",
       "Flexible scheduling to meet construction timelines"
     ],
-    image: "/lovable-uploads/photo-1496307653780-42ee777d4833.jpg"
+    image: "/lovable-uploads/11936435-50cf-45a5-bde6-fd079be2eec2.png"
   }
 ];
