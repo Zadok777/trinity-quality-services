@@ -34,8 +34,11 @@ const ServicesPage = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-trinity-navy mb-6 heading-underline-center">
-              Professional Cleaning Services
+              Our Services
             </h2>
+            <p className="text-gray-700 text-lg mb-6">
+              Professional interior and exterior cleaning services for residential and commercial properties
+            </p>
             <p className="text-gray-700 text-lg mb-6">
               At Trinity Quality Services, we offer a comprehensive range of exterior cleaning services for both residential and commercial properties. With over 26 years of experience, we deliver exceptional results that enhance the appearance and value of your property.
             </p>
