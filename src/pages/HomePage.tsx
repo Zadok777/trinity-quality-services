@@ -24,7 +24,7 @@ const HomePage = () => {
             <h2 className="text-2xl md:text-3xl font-medium mb-8 text-trinity-light">
               Integrity + Quality = Great Service
             </h2>
-            <p className="text-xl mb-8 max-w-2xl">Serving Hillsborough County and surrounding areas with over 26 years of professional cleaning experience.</p>
+            <p className="text-xl mb-8 max-w-2xl">Serving Hillsborough County and surrounding areas with over 26 years of experience in the industry.</p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="btn-secondary">
                 Get Free Estimate
