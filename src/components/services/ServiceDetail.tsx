@@ -50,7 +50,7 @@ const ServiceDetail = ({ service, isReversed }: ServiceDetailProps) => {
           Request a Quote
         </Link>
       </div>
-      <div>
+      <div className="h-full">
         {service.youtubeId ? (
           <div className="rounded-lg shadow-xl overflow-hidden">
             <AspectRatio ratio={9/16} className="bg-black">
@@ -64,26 +64,31 @@ const ServiceDetail = ({ service, isReversed }: ServiceDetailProps) => {
             </AspectRatio>
           </div>
         ) : service.video ? (
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            className="rounded-lg shadow-xl w-full h-auto object-cover"
-          >
-            <source src={service.video} type="video/mp4" />
-            <img 
-              src={service.image} 
-              alt={service.title}
-              className="rounded-lg shadow-xl w-full h-auto object-cover" 
-            />
-          </video>
+          <div className="rounded-lg shadow-xl overflow-hidden">
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="w-full h-auto object-contain"
+            >
+              <source src={service.video} type="video/mp4" />
+              <img 
+                src={service.image} 
+                alt={service.title}
+                className="w-full h-auto" 
+              />
+            </video>
+          </div>
         ) : (
-          <img 
-            src={service.image}
-            alt={service.title} 
-            className="rounded-lg shadow-xl w-full h-auto object-cover"
-          />
+          <div className="rounded-lg shadow-xl overflow-hidden">
+            <img 
+              src={service.image}
+              alt={service.title} 
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
         )}
       </div>
     </div>
