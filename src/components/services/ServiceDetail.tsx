@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 interface ServiceDetailProps {
   service: {
@@ -51,14 +52,16 @@ const ServiceDetail = ({ service, isReversed }: ServiceDetailProps) => {
       </div>
       <div>
         {service.youtubeId ? (
-          <div className="aspect-w-16 aspect-h-9 rounded-lg shadow-xl overflow-hidden">
-            <iframe 
-              src={`https://www.youtube.com/embed/${service.youtubeId}?autoplay=0&controls=1&mute=1`}
-              title={service.title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen
-              className="w-full h-full"
-            ></iframe>
+          <div className="rounded-lg shadow-xl overflow-hidden">
+            <AspectRatio ratio={9/16} className="bg-black">
+              <iframe 
+                src={`https://www.youtube.com/embed/${service.youtubeId}?autoplay=0&controls=1&mute=1&rel=0&modestbranding=1&playsinline=1`}
+                title={service.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </AspectRatio>
           </div>
         ) : service.video ? (
           <video 
