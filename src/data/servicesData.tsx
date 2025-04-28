@@ -19,7 +19,8 @@ export const servicesData = [
       "Flexible scheduling to accommodate your busy lifestyle"
     ],
     image: "/lovable-uploads/f1aff985-f154-47e8-bb10-a34ff5afc017.png",
-    video: undefined
+    video: undefined,
+    youtubeId: ""
   },
   {
     id: "commercial",

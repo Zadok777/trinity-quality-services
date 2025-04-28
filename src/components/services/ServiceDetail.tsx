@@ -10,6 +10,7 @@ interface ServiceDetailProps {
     benefits: string[];
     image: string;
     video?: string;
+    youtubeId?: string;
   };
   isReversed?: boolean;
 }
@@ -49,7 +50,17 @@ const ServiceDetail = ({ service, isReversed }: ServiceDetailProps) => {
         </Link>
       </div>
       <div>
-        {service.video ? (
+        {service.youtubeId ? (
+          <div className="aspect-w-16 aspect-h-9 rounded-lg shadow-xl overflow-hidden">
+            <iframe 
+              src={`https://www.youtube.com/embed/${service.youtubeId}?autoplay=0&controls=1&mute=1`}
+              title={service.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
+        ) : service.video ? (
           <video 
             autoPlay 
             loop 
