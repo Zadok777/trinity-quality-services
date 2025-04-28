@@ -82,25 +82,6 @@ export const servicesData = [
     image: "/lovable-uploads/d18a6644-7d05-4e37-93f3-2f4a9bc41347.png"
   },
   {
-    id: "screen-repair",
-    title: "Screen Repair",
-    shortDescription: "Restore functionality and appearance with our window and door screen repair service.",
-    icon: (
-      <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
-        <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2z" clipRule="evenodd" />
-      </svg>
-    ),
-    fullDescription: "Damaged screens not only look unsightly but can also allow insects into your home. Our screen repair service offers quick and affordable solutions for damaged window and door screens. We provide high-quality materials and expert craftsmanship to ensure your screens are both functional and attractive.",
-    benefits: [
-      "Keep insects out while letting fresh air in",
-      "Choose from various screen materials and colors",
-      "Professional installation ensures proper fit and function",
-      "More cost-effective than full screen replacement",
-      "Same-day service available for many repairs"
-    ],
-    image: "/images/screen-repair.jpg"
-  },
-  {
     id: "new-construction",
     title: "New Construction Clean Up",
     shortDescription: "Complete post-construction cleaning services for new builds and renovations.",
