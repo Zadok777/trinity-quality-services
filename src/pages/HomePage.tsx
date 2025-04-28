@@ -20,9 +20,7 @@ const HomePage = () => {
       }}></div>
         <div className="relative container-custom min-h-[80vh] flex flex-col justify-center py-20">
           <div className="max-w-3xl animate-fade-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Professional Window Cleaning Services
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Professional Window Cleaning And Pressure Washing Services</h1>
             <h2 className="text-2xl md:text-3xl font-medium mb-8 text-trinity-light">
               Integrity + Quality = Great Service
             </h2>
