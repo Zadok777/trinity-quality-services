@@ -84,19 +84,19 @@ export const servicesData = [
   {
     id: "new-construction",
     title: "New Construction Clean Up",
-    shortDescription: "Complete post-construction cleaning services for new builds and renovations.",
+    shortDescription: "Complete post-construction glass cleaning services for new builds and renovations.",
     icon: (
       <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
         <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2z" clipRule="evenodd" />
       </svg>
     ),
-    fullDescription: "We offer construction clean up for all glass surfaces. Whether they are new installs or remodels, we will make the glass shine.",
+    fullDescription: "We offer construction clean up for all glass surfaces. Our specialized glass cleaning service removes paint overspray, debris, drywall dust, silicone residue, tape adhesive, and other construction-related materials from any glass surface. Whether it's new installations or remodels, we ensure your windows, glass doors, and other glass features shine like new.",
     benefits: [
       "Detailed cleaning of all windows, frames, and tracks",
-      "Professional cleaning of all surfaces",
-      "Final inspection to ensure move-in ready condition",
+      "Professional cleaning of all glass surfaces",
+      "Final inspection to ensure crystal-clear results",
       "Flexible scheduling to meet construction timelines"
     ],
-    image: "/images/new-construction-cleanup.jpg"
+    image: "/lovable-uploads/photo-1496307653780-42ee777d4833.jpg"
   }
 ];
