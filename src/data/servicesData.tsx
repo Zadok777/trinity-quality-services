@@ -79,7 +79,7 @@ export const servicesData = [
       "Eliminate breeding grounds for pests",
       "Identify potential gutter issues before they become major problems"
     ],
-    image: "/images/gutter-cleaning.jpg"
+    image: "/lovable-uploads/d18a6644-7d05-4e37-93f3-2f4a9bc41347.png"
   },
   {
     id: "screen-repair",
