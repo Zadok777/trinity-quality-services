@@ -89,11 +89,6 @@ const Footer = () => {
                   Gutter Cleaning
                 </Link>
               </li>
-              <li>
-                <Link to="/services" className="text-gray-300 hover:text-trinity-light transition-colors">
-                  Screen Repair
-                </Link>
-              </li>
             </ul>
           </div>
 
