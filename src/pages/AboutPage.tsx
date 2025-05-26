@@ -4,8 +4,10 @@ import { Helmet } from "react-helmet";
 import PageBanner from "@/components/ui/PageBanner";
 import TestimonialCard from "@/components/ui/TestimonialCard";
 import { testimonialsData } from "@/data/testimonialsData";
+
 const AboutPage = () => {
-  return <>
+  return (
+    <>
       <Helmet>
         <title>About Trinity Quality Services | Window Cleaning Hillsborough County</title>
         <meta name="description" content="Learn about Trinity Quality Services - 16 years in business with 26 years of window cleaning experience serving Hillsborough County and surrounding areas in Florida." />
@@ -22,7 +24,7 @@ const AboutPage = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-trinity-navy mb-6 heading-underline">
                 Our Story
               </h2>
-              <p className="text-gray-700 mb-4">Trinity Quality Services was founded in 2008 by David Santiago, who had already accumulated a decade of window cleaning experience alone. </p>
+              <p className="text-gray-700 mb-4">Trinity Quality Services was founded in 2008 by David Santiago, who had already accumulated a decade of window cleaning experience alone. </p>
               <p className="text-gray-700 mb-4">With 16 years in business and 26 years of industry experience, we've built our reputation on delivering exceptional results and outstanding customer service. Our commitment to quality, integrity, and professionalism has earned us a loyal customer base.</p>
               <p className="text-gray-700">
                 Today, Trinity Quality Services continues to be a family-owned and operated business, maintaining the same values and commitment to excellence that we started with. We take pride in enhancing the appearance and value of homes and businesses throughout our community.
@@ -123,7 +125,7 @@ const AboutPage = () => {
             <div className="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100">
               <div className="bg-trinity-light/10 text-trinity-navy p-4 inline-block rounded-full mb-4">
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z" clipRule="evenodd" />
+                  <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" clipRule="evenodd" />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-trinity-navy mb-3">Environmental Responsibility</h3>
@@ -135,7 +137,7 @@ const AboutPage = () => {
             <div className="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100">
               <div className="bg-trinity-light/10 text-trinity-navy p-4 inline-block rounded-full mb-4">
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                  <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-trinity-navy mb-3">Fair & Transparent Pricing</h3>
@@ -152,43 +154,21 @@ const AboutPage = () => {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-trinity-navy mb-6 heading-underline-center">
-              Meet Our Team
+              Meet Our Owners
             </h2>
             <p className="text-gray-700 max-w-3xl mx-auto">
-              Our team consists of trained professionals who are passionate about delivering the highest quality service to our customers.
+              Trinity Quality Services is proudly owned and operated by David and Stacey Santiago, who are committed to delivering exceptional service to every customer.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src="/images/team-1.jpg" alt="John Smith - Founder & Owner" className="w-full h-64 object-cover object-center" />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-trinity-navy mb-1">John Smith</h3>
-                <p className="text-trinity-light font-medium mb-3">Founder & Owner</p>
-                <p className="text-gray-600 mb-4">
-                  With 26 years of window cleaning experience, John founded Trinity Quality Services in 2008. He oversees all operations and is committed to maintaining the highest standards of quality.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src="/images/team-2.jpg" alt="Sarah Johnson - Operations Manager" className="w-full h-64 object-cover object-center" />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-trinity-navy mb-1">Sarah Johnson</h3>
-                <p className="text-trinity-light font-medium mb-3">Operations Manager</p>
-                <p className="text-gray-600 mb-4">
-                  Sarah has been with Trinity Quality Services for 8 years and ensures that every job is scheduled, staffed, and completed to our high standards.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src="/images/team-3.jpg" alt="Michael Rogers - Lead Technician" className="w-full h-64 object-cover object-center" />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-trinity-navy mb-1">Michael Rogers</h3>
-                <p className="text-trinity-light font-medium mb-3">Lead Technician</p>
-                <p className="text-gray-600 mb-4">
-                  With over 10 years of experience, Michael leads our technical team and trains new team members in our proven cleaning methods and safety protocols.
+          <div className="flex justify-center">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-md">
+              <img src="/lovable-uploads/aad51947-f061-4f40-80e2-fb1a517ba201.png" alt="David and Stacey Santiago - Owners of Trinity Quality Services" className="w-full h-80 object-cover object-center" />
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-semibold text-trinity-navy mb-1">David & Stacey Santiago</h3>
+                <p className="text-trinity-light font-medium mb-3">Owners & Founders</p>
+                <p className="text-gray-600">
+                  David founded Trinity Quality Services in 2008 with 26 years of window cleaning experience. Together with Stacey, they have built a family business committed to quality, integrity, and exceptional customer service throughout Hillsborough County and surrounding areas.
                 </p>
               </div>
             </div>
@@ -230,6 +210,8 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-    </>;
+    </>
+  );
 };
+
 export default AboutPage;
