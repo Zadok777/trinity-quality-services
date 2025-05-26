@@ -18,7 +18,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-4">
-              Professional window cleaning services with 16 years in business and 26 years of industry experience, serving Hillsborough County and surrounding areas.
+              Professional window cleaning services with 26 years of industry experience, serving Hillsborough County and surrounding areas.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-trinity-light">
@@ -103,11 +103,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                <span>(813) XXX-XXXX</span>
+                <span>(813) 577-0051</span>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                <span>info@trinityqualityservices.com</span>
+                <span>tqs.david@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />

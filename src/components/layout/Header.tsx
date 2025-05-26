@@ -23,10 +23,10 @@ const Header = () => {
           <div className="hidden md:flex items-center text-trinity-navy">
             <Phone className="mr-2 h-5 w-5" />
             <a 
-              href="tel:+1813XXXXXXX" 
+              href="tel:+18135770051" 
               className="font-medium hover:text-trinity-light transition-colors"
             >
-              (813) XXX-XXXX
+              (813) 577-0051
             </a>
           </div>
 
@@ -110,10 +110,10 @@ const Header = () => {
             <div className="flex items-center text-trinity-navy pt-2">
               <Phone className="mr-2 h-5 w-5" />
               <a 
-                href="tel:+1813XXXXXXX" 
+                href="tel:+18135770051" 
                 className="font-medium hover:text-trinity-light transition-colors"
               >
-                (813) XXX-XXXX
+                (813) 577-0051
               </a>
             </div>
           </nav>

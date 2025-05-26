@@ -22,8 +22,8 @@ const Layout = () => {
               "name": "Trinity Quality Services",
               "description": "Professional window cleaning services in Hillsborough County with 26 years of experience.",
               "image": "/images/logo.png",
-              "telephone": "(813) XXX-XXXX",
-              "email": "info@trinityqualityservices.com",
+              "telephone": "(813) 577-0051",
+              "email": "tqs.david@gmail.com",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Tampa",
