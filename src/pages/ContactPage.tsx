@@ -1,8 +1,10 @@
+
 import React from "react";
 import { Helmet } from "react-helmet";
 import PageBanner from "@/components/ui/PageBanner";
 import ContactForm from "@/components/ui/ContactForm";
 import { Phone, Mail, Clock, MapPin } from "lucide-react";
+
 const ContactPage = () => {
   return <>
       <Helmet>
@@ -44,7 +46,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-trinity-navy">Phone</h3>
-                    <p className="text-gray-700">(813) XXX-XXXX</p>
+                    <p className="text-gray-700">(813) 577-0051</p>
                     <p className="text-sm text-gray-500 mt-1">Monday-Friday: 8am-6pm, Saturday: 9am-3pm</p>
                   </div>
                 </div>
@@ -158,4 +160,5 @@ Hillsborough, Pasco, Pinellas, Polk, Hardee, Manatee, Sarasota, Desoto, Hernando
       </section>
     </>;
 };
+
 export default ContactPage;
