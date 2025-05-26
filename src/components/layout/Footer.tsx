@@ -21,7 +21,7 @@ const Footer = () => {
               Professional window cleaning services with 26 years of industry experience, serving Hillsborough County and surrounding areas.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-trinity-light">
+              <a href="https://www.facebook.com/share/16u8m2J2di/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-white hover:text-trinity-light">
                 <Facebook className="h-5 w-5" />
               </a>
               <a href="#" className="text-white hover:text-trinity-light">
