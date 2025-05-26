@@ -18,7 +18,7 @@ const AboutPage = () => {
         <meta name="keywords" content="window cleaning company, about Trinity Quality Services, experienced window cleaners Florida, Hillsborough County window cleaning company" />
       </Helmet>
 
-      <PageBanner title="About Us" description="Over 16 years of trusted service in Hillsborough County" backgroundImage="/images/about-banner.jpg" />
+      <PageBanner title="About Us" backgroundImage="/images/about-banner.jpg" />
 
       <CompanyHistory />
       <MissionStatement />
