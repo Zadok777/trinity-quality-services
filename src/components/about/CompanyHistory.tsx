@@ -18,12 +18,12 @@ const CompanyHistory = () => {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
-              <img src="/images/about-1.jpg" alt="Trinity Quality Services team member cleaning windows" className="rounded-lg shadow-md w-full h-auto object-cover" />
-              <img src="/images/about-2.jpg" alt="Window cleaning in progress" className="rounded-lg shadow-md w-full h-auto object-cover" />
+              <img src="/lovable-uploads/d0539ce4-c961-40ab-885a-42f2edb3472a.png" alt="Before and after garage door and house pressure washing results" className="rounded-lg shadow-md w-full h-auto object-cover" />
+              <img src="/lovable-uploads/f821b95e-36d1-4ad2-bb8e-bbac12acac6d.png" alt="Before and after brick walkway and steps pressure washing results" className="rounded-lg shadow-md w-full h-auto object-cover" />
             </div>
             <div className="mt-8 space-y-4">
-              <img src="/images/about-3.jpg" alt="Finished window cleaning project" className="rounded-lg shadow-md w-full h-auto object-cover" />
-              <img src="/images/about-4.jpg" alt="Trinity Quality Services van" className="rounded-lg shadow-md w-full h-auto object-cover" />
+              <img src="/lovable-uploads/342d204d-23b3-441e-bd7b-f6818de08554.png" alt="Before and after sidewalk, window, and driveway cleaning results" className="rounded-lg shadow-md w-full h-auto object-cover" />
+              <img src="/lovable-uploads/c811549f-fc30-4593-bb28-d8961c8fac09.png" alt="Before and after pool deck and lanai pressure washing results" className="rounded-lg shadow-md w-full h-auto object-cover" />
             </div>
           </div>
         </div>
