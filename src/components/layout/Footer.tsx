@@ -111,7 +111,10 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                <span>Serving Hillsborough County and surrounding areas in Florida</span>
+                <div>
+                  <div>2780 E. Fowler Ave #421</div>
+                  <div>Tampa, FL 33612</div>
+                </div>
               </li>
             </ul>
           </div>

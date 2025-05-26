@@ -26,8 +26,10 @@ const Layout = () => {
               "email": "tqs.david@gmail.com",
               "address": {
                 "@type": "PostalAddress",
+                "streetAddress": "2780 E. Fowler Ave #421",
                 "addressLocality": "Tampa",
                 "addressRegion": "FL",
+                "postalCode": "33612",
                 "addressCountry": "US"
               },
               "geo": {

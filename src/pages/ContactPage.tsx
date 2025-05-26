@@ -79,6 +79,19 @@ const ContactPage = () => {
                     <MapPin className="h-6 w-6 text-trinity-navy" />
                   </div>
                   <div>
+                    <h3 className="font-semibold text-lg text-trinity-navy">Address</h3>
+                    <div className="text-gray-700">
+                      <div>2780 E. Fowler Ave #421</div>
+                      <div>Tampa, FL 33612</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="bg-trinity-light/10 p-3 rounded-full mr-4">
+                    <MapPin className="h-6 w-6 text-trinity-navy" />
+                  </div>
+                  <div>
                     <h3 className="font-semibold text-lg text-trinity-navy">Service Area</h3>
                     <p className="text-gray-700">Serving The Following Counties: 
 Hillsborough, Pasco, Pinellas, Polk, Hardee, Manatee, Sarasota, Desoto, Hernando</p>
