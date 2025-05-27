@@ -14,16 +14,19 @@ const Layout = () => {
         <meta name="description" content="Professional window cleaning services in Hillsborough County, Florida. Trinity Quality Services offers residential and commercial window cleaning with 26 years of experience." />
         <meta name="keywords" content="window cleaning, Hillsborough County, Tampa window cleaners, professional window washing, commercial window cleaning, residential window cleaning" />
         <title>Trinity Quality Services | Professional Window Cleaning in Hillsborough County</title>
+        
+        {/* Enhanced Local Business Schema */}
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Trinity Quality Services",
-              "description": "Professional window cleaning services in Hillsborough County with 26 years of experience.",
+              "description": "Professional window cleaning, pressure washing, and gutter cleaning services in Hillsborough County with 26 years of experience.",
               "image": "/images/logo.png",
               "telephone": "(813) 577-0051",
               "email": "tqs.david@gmail.com",
+              "url": "https://www.trinityqualityservices.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "2780 E. Fowler Ave #421",
@@ -34,24 +37,39 @@ const Layout = () => {
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "27.9506",
-                "longitude": "-82.4572"
+                "latitude": "28.0636",
+                "longitude": "-82.4304"
               },
-              "areaServed": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                  "@type": "GeoCoordinates",
-                  "latitude": "27.9506",
-                  "longitude": "-82.4572"
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Tampa"
                 },
-                "geoRadius": "50"
-              },
+                {
+                  "@type": "City", 
+                  "name": "Brandon"
+                },
+                {
+                  "@type": "City",
+                  "name": "Plant City"
+                },
+                {
+                  "@type": "City",
+                  "name": "Temple Terrace"
+                }
+              ],
+              "serviceType": [
+                "Window Cleaning",
+                "Pressure Washing", 
+                "Gutter Cleaning",
+                "Screen Repair"
+              ],
               "openingHoursSpecification": [
                 {
                   "@type": "OpeningHoursSpecification",
                   "dayOfWeek": [
                     "Monday",
-                    "Tuesday",
+                    "Tuesday", 
                     "Wednesday",
                     "Thursday",
                     "Friday"
@@ -67,11 +85,15 @@ const Layout = () => {
                 }
               ],
               "sameAs": [
-                "https://www.facebook.com/TrinityQualityServices",
-                "https://www.instagram.com/trinityqualityservices",
-                "https://www.linkedin.com/company/trinity-quality-services"
+                "https://www.facebook.com/share/16u8m2J2di/?mibextid=wwXIfr",
+                "https://www.instagram.com/tqspros/profilecard/?igsh=MWpwZ3JrNG9oZHJqaA=="
               ],
-              "priceRange": "$$"
+              "priceRange": "$$",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "47"
+              }
             }
           `}
         </script>

@@ -14,6 +14,15 @@ const HomePage = () => {
         <title>Trinity Quality Services | Professional Window Cleaning in Hillsborough County</title>
         <meta name="description" content="Professional window cleaning services in Hillsborough County, Florida with 26 years of experience. Residential and commercial window cleaning services." />
         <meta name="keywords" content="window cleaning Hillsborough County, professional window cleaning Florida, window cleaning company near me" />
+        
+        {/* Local SEO meta tags */}
+        <meta property="og:title" content="Trinity Quality Services | Professional Window Cleaning" />
+        <meta property="og:description" content="26 years of professional window cleaning experience serving Tampa, Brandon, Plant City and surrounding areas." />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        
+        {/* Google Business verification */}
+        <meta name="google-site-verification" content="" />
       </Helmet>
 
       {/* Hero Section */}
