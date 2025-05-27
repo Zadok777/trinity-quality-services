@@ -11,8 +11,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <div className="text-white font-heading">
-                <span className="text-2xl font-bold">Trinity</span>
-                <span className="text-trinity-light text-2xl font-bold">Quality</span>
+                <span className="text-2xl font-bold">Trinity Quality Services</span>
                 <span className="text-sm block">Window Cleaning Services</span>
               </div>
             </div>
