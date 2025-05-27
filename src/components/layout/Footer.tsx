@@ -12,12 +12,8 @@ const Footer = () => {
             <div className="mb-4">
               <div className="text-white font-heading">
                 <span className="text-2xl font-bold">Trinity Quality Services</span>
-                <span className="text-sm block">Window Cleaning Services</span>
               </div>
             </div>
-            <p className="text-gray-300 mb-4">
-              Professional window cleaning services with 26 years of industry experience, serving Hillsborough County and surrounding areas.
-            </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/share/16u8m2J2di/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-white hover:text-trinity-light">
                 <Facebook className="h-5 w-5" />
