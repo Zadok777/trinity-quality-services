@@ -4,6 +4,8 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet";
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as SonnerToaster } from "@/components/ui/sonner";
 
 const Layout = () => {
   return (
@@ -104,6 +106,8 @@ const Layout = () => {
           <Outlet />
         </main>
         <Footer />
+        <Toaster />
+        <SonnerToaster />
       </div>
     </>
   );

@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -8,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "@/components/ui/sonner";
 import { supabase } from "@/integrations/supabase/client";
 
 // Form validation schema
@@ -38,7 +39,6 @@ type FormValues = z.infer<typeof formSchema>;
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const { toast } = useToast();
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -62,30 +62,52 @@ const ContactForm = () => {
     try {
       console.log("Submitting form data:", data);
       
-      // Call the Supabase Edge Function to send emails
+      // Transform data to match database schema
+      const dbData = {
+        full_name: data.fullName,
+        email: data.email,
+        phone: data.phone,
+        address: data.address,
+        service_type: data.service,
+        property_type: data.propertyType,
+        referral_source: data.source,
+        preferred_contact: data.contactMethod,
+        message: data.message,
+        preferred_date: data.preferredDate,
+      };
+
+      // Save to database
+      const { error: dbError } = await supabase
+        .from('contact_submissions')
+        .insert([dbData]);
+
+      if (dbError) {
+        console.error("Database error:", dbError);
+        throw new Error("Failed to save contact information");
+      }
+
+      // Send emails via Edge Function
       const { data: result, error } = await supabase.functions.invoke('send-contact-email', {
         body: data
       });
 
       if (error) {
-        console.error("Supabase function error:", error);
-        throw new Error(error.message || "Failed to send email");
+        console.error("Email function error:", error);
+        // Don't throw error here since data was saved successfully
+        console.warn("Email failed but contact was saved to database");
       }
 
-      console.log("Email sent successfully:", result);
+      console.log("Form submitted successfully:", result);
       
       setSubmitted(true);
-      toast({
-        title: "Message Sent Successfully!",
+      toast("Message Sent Successfully!", {
         description: "We've received your request and will contact you soon. Check your email for confirmation.",
       });
 
     } catch (error) {
       console.error("Form submission error:", error);
-      toast({
-        title: "Submission Failed",
+      toast("Submission Failed", {
         description: "There was an error sending your message. Please try again or call us directly at (813) 577-0051.",
-        variant: "destructive",
       });
     } finally {
       setIsSubmitting(false);
