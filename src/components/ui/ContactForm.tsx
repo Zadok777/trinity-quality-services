@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -10,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 // Form validation schema
 const formSchema = z.object({
@@ -60,25 +60,31 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // Here we would normally send the data to Supabase
-      // Since the Supabase connection is not set up yet,
-      // we'll simulate a successful submission
-      console.log("Form data:", data);
+      console.log("Submitting form data:", data);
       
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      // Call the Supabase Edge Function to send emails
+      const { data: result, error } = await supabase.functions.invoke('send-contact-email', {
+        body: data
+      });
+
+      if (error) {
+        console.error("Supabase function error:", error);
+        throw new Error(error.message || "Failed to send email");
+      }
+
+      console.log("Email sent successfully:", result);
       
       setSubmitted(true);
       toast({
-        title: "Form Submitted Successfully",
-        description: "We will contact you soon. Thank you!",
+        title: "Message Sent Successfully!",
+        description: "We've received your request and will contact you soon. Check your email for confirmation.",
       });
 
     } catch (error) {
       console.error("Form submission error:", error);
       toast({
         title: "Submission Failed",
-        description: "There was an error submitting your form. Please try again.",
+        description: "There was an error sending your message. Please try again or call us directly at (813) 577-0051.",
         variant: "destructive",
       });
     } finally {
@@ -107,7 +113,8 @@ const ContactForm = () => {
         </div>
         <h3 className="text-xl font-semibold text-gray-900 mb-2">Thank you for contacting us!</h3>
         <p className="text-gray-600 mb-6">
-          Your message has been successfully submitted. We will contact you soon using your preferred contact method.
+          Your message has been successfully sent. We will contact you soon using your preferred contact method.
+          You should also receive a confirmation email shortly.
         </p>
         <Button 
           onClick={() => {
@@ -350,7 +357,7 @@ const ContactForm = () => {
           className="w-full bg-trinity-navy hover:bg-trinity-navy/90" 
           disabled={isSubmitting}
         >
-          {isSubmitting ? "Submitting..." : "Submit Request"}
+          {isSubmitting ? "Sending..." : "Submit Request"}
         </Button>
 
         <p className="text-xs text-gray-500 text-center">
