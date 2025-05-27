@@ -17,6 +17,29 @@ const Layout = () => {
         <meta name="keywords" content="window cleaning, Hillsborough County, Tampa window cleaners, professional window washing, commercial window cleaning, residential window cleaning" />
         <title>Trinity Quality Services | Professional Window Cleaning in Hillsborough County</title>
         
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://trinityqualityservicesfl.com" />
+        <meta property="og:title" content="Trinity Quality Services | Professional Window Cleaning" />
+        <meta property="og:description" content="26 years of professional window cleaning experience serving Hillsborough County, Florida. Residential and commercial services available." />
+        <meta property="og:image" content="https://trinityqualityservicesfl.com/lovable-uploads/29552300-f3a8-4c72-b623-2fa2fc0e81a6.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Trinity Quality Services" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://trinityqualityservicesfl.com" />
+        <meta name="twitter:title" content="Trinity Quality Services | Professional Window Cleaning" />
+        <meta name="twitter:description" content="26 years of professional window cleaning experience serving Hillsborough County, Florida." />
+        <meta name="twitter:image" content="https://trinityqualityservicesfl.com/lovable-uploads/29552300-f3a8-4c72-b623-2fa2fc0e81a6.png" />
+
+        {/* Additional meta tags for better link previews */}
+        <meta name="author" content="Trinity Quality Services" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://trinityqualityservicesfl.com" />
+        
         {/* Enhanced Local Business Schema */}
         <script type="application/ld+json">
           {`
@@ -25,10 +48,10 @@ const Layout = () => {
               "@type": "LocalBusiness",
               "name": "Trinity Quality Services",
               "description": "Professional window cleaning, pressure washing, and gutter cleaning services in Hillsborough County with 26 years of experience.",
-              "image": "/images/logo.png",
+              "image": "https://trinityqualityservicesfl.com/lovable-uploads/29552300-f3a8-4c72-b623-2fa2fc0e81a6.png",
               "telephone": "(813) 577-0051",
               "email": "tqs.david@gmail.com",
-              "url": "https://www.trinityqualityservices.com",
+              "url": "https://trinityqualityservicesfl.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "2780 E. Fowler Ave #421",
