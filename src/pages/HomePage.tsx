@@ -20,6 +20,33 @@ const HomePage = () => {
         
         {/* Google Business verification */}
         <meta name="google-site-verification" content="" />
+         <script type="application/ld+json">
+  {`{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Trinity Quality Services",
+    "description": "Professional window 
+  cleaning and pressure washing services 
+  serving Tampa Bay and Hillsborough County,
+   Florida with 26+ years of experience.",
+    "url": 
+  "https://trinityqualityservicesfl.com",
+    "telephone": "+1-813-577-0051",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tampa Bay",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Tampa", "Brandon", 
+  "Plant City", "Riverview"],
+    "serviceType": ["Window Cleaning", 
+  "Pressure Washing", "Gutter Cleaning", 
+  "Screen Repair"],
+    "foundingDate": "2008",
+    "openingHours": "Mo-Fr 08:00-17:00"
+  }`}
+  </script>
       </Helmet>
     <script type="application/ld+json">
   {`{
