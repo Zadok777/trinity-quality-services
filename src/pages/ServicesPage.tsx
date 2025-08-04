@@ -9,9 +9,11 @@ import { Link } from "react-router-dom";
 const ServicesPage = () => {
   return <>
       <Helmet>
-        <title>Our Services | Trinity Quality Services</title>
-        <meta name="description" content="Professional window cleaning, pressure washing, gutter cleaning and screen repair services in Hillsborough County, Florida. Residential and commercial services available." />
-        <meta name="keywords" content="window cleaning services Hillsborough County, pressure washing, gutter cleaning, screen repair, commercial window cleaning, residential window washing" />
+        <title>Window Cleaning & Pressure Washing Services Tampa Bay FL | Trinity Qualit Services</title>
+  <meta name="description" 
+  content="Professional window cleaning, pressure washing, gutter cleaning in Tampa Bay & HillsboroughCounty FL. Residential & commercial services. Call (813) 577-0051!" />
+  <meta name="keywords" 
+    content="window cleaning Tampa Bay, pressure washing Tampa, window cleaning services, power washing Hillsborough County, residential window cleaning, commercial window cleaning, gutter cleaning Tampa, Florida" />
       </Helmet>
 
       <PageBanner title="Our Services" description="Professional interior and exterior cleaning services for residential and commercial properties" backgroundImage="/images/services-banner.jpg" />
