@@ -10,7 +10,7 @@ const HomePage = () => {
       <Helmet>
         <title>Trinity Quality Services | Professional Window Cleaning in Hillsborough County</title>
         <meta name="description" content="Professional window cleaning services in Hillsborough County, Florida with 26 years of experience. Residential and commercial window cleaning services." />
-        <meta name="keywords" content="window cleaning Tampa, pressure washing Tampa Bay, professional window cleaning, power washing services, residential window cleaning, commercial cleaning, Tampa Bay, 
+         <meta name="keywords" content="window cleaning Tampa, pressure washing Tampa Bay, professional window cleaning, power washing services, residential window cleaning, commercial cleaning, Tampa Bay, 
   Brandon, Plant City, Hillsborough County"/>
         
         {/* Local SEO meta tags */}
