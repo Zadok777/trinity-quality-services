@@ -24,8 +24,8 @@ export const servicesData = [
   },
   {
     id: "commercial",
-    title: "Commercial Window Cleaning",
-    shortDescription: "Keep your business looking professional with our commercial window cleaning services.",
+   title: "Commercial Window Cleaning Tampa",
+  shortDescription: "Keep your Tampa Bay business looking professional with our commercial window cleaning services.",
     icon: (
       <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
         <path d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" />
@@ -44,8 +44,8 @@ export const servicesData = [
   },
   {
     id: "pressure-washing",
-    title: "Pressure Washing",
-    shortDescription: "Restore the beauty of your property's exterior surfaces with our pressure washing service.",
+   title: "Pressure Washing Tampa Bay",
+  shortDescription: "Restore the beauty of your Tampa Bay property's exterior surfaces with our pressure washing service.",
     icon: (
       <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
         <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z" clipRule="evenodd" />
