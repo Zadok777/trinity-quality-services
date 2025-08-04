@@ -8,17 +8,10 @@ import { testimonialsData } from "@/data/testimonialsData";
 const HomePage = () => {
   return <>
       <Helmet>
-       <title>Professional Window Cleaning &
-  Pressure Washing Tampa Bay FL | Trinity
-  Quality Services</title>
-  <meta name="description" 
-  content="Professional window cleaning & 
-  pressure washing services in Tampa Bay & 
-  Hillsborough County FL. Residential & 
-  commercial cleaning. 26+ years experience.
-   Call (813) 577-0051 for free quote!" />
+        <title>Trinity Quality Services | Professional Window Cleaning in Hillsborough County</title>
         <meta name="description" content="Professional window cleaning services in Hillsborough County, Florida with 26 years of experience. Residential and commercial window cleaning services." />
-        <meta name="keywords" content="window cleaning Hillsborough County, professional window cleaning Florida, window cleaning company near me" />
+        <meta name="keywords" content="window cleaning Tampa, pressure washing Tampa Bay, professional window cleaning, power washing services, residential window cleaning, commercial cleaning, Tampa Bay, 
+  Brandon, Plant City, Hillsborough County"/>
         
         {/* Local SEO meta tags */}
         <meta property="og:title" content="Trinity Quality Services | Professional Window Cleaning" />
