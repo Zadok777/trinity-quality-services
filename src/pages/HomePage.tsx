@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -6,10 +5,8 @@ import ServiceCard from "@/components/ui/ServiceCard";
 import TestimonialCard from "@/components/ui/TestimonialCard";
 import { servicesData } from "@/data/servicesData";
 import { testimonialsData } from "@/data/testimonialsData";
-
 const HomePage = () => {
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Trinity Quality Services | Professional Window Cleaning in Hillsborough County</title>
         <meta name="description" content="Professional window cleaning services in Hillsborough County, Florida with 26 years of experience. Residential and commercial window cleaning services." />
@@ -36,7 +33,7 @@ const HomePage = () => {
             <h2 className="text-2xl md:text-3xl font-medium mb-8 text-trinity-light">
               Integrity + Quality = Great Service
             </h2>
-            <p className="text-xl mb-8 max-w-2xl">Serving Hillsborough County and surrounding areas with over 26 years of experience in the industry.</p>
+            <p className="text-xl mb-8 max-w-2xl">Serving Tampa Bay | Hillsborough County and surrounding areas with over 26 years of experience in the industry.</p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="btn-secondary">
                 Get Free Estimate
@@ -221,8 +218,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default HomePage;
