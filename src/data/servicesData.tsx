@@ -24,7 +24,7 @@ export const servicesData = [
   },
   {
     id: "commercial",
-   title: "Commercial Window Cleaning Tampa",
+   title: "Commercial Window Cleaning Tampa Bay",
   shortDescription: "Keep your Tampa Bay business looking professional with our commercial window cleaning services.",
     icon: (
       <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
