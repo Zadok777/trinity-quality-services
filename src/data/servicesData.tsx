@@ -3,7 +3,7 @@ import React from "react";
 export const servicesData = [
   {
     id: "residential",
-    title: "Residential Window Cleaning TampaBay",
+    title: "Residential Window Cleaning Tampa Bay",
   shortDescription: "Professional window cleaning for homes in Tampa, Brandon, Plant City, and throughout Hillsborough County.",
     icon: (
       <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
