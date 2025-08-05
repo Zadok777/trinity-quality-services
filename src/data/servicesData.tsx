@@ -44,7 +44,7 @@ export const servicesData = [
   },
   {
     id: "pressure-washing",
-   title: "Pressure Washing Tampa Bay",
+   title: "Pressure Washing Tampa",
   shortDescription: "Restore the beauty of your Tampa Bay property's exterior surfaces with our pressure washing service.",
     icon: (
       <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
@@ -63,7 +63,7 @@ export const servicesData = [
   },
   {
     id: "gutter-cleaning",
-    title: "Gutter Cleaning",
+    title: "Gutter Cleaning Tampa",
     shortDescription: "Prevent water damage to your home with our thorough gutter cleaning service.",
     icon: (
       <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
@@ -83,7 +83,7 @@ export const servicesData = [
   },
   {
     id: "new-construction",
-    title: "New Construction Clean Up",
+    title: "New Construction Clean Up Tampa",
     shortDescription: "Complete post-construction glass cleaning services for new builds and renovations.",
     icon: (
       <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
