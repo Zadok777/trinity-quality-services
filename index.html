@@ -11,6 +11,32 @@
       gtag('js', new Date());
       gtag('config', 'G-F14NMYB458');
     </script>
+    
+    <!-- Enhanced tracking for Trinity Quality Services -->
+    <script>
+      // Enhanced tracking for Trinity Quality Services
+      gtag('config', 'G-F14NMYB458', {
+        custom_map: {
+          'custom_parameter_1': 'service_area'
+        }
+      });
+
+      // Track phone number clicks
+      function trackPhoneClick() {
+        gtag('event', 'phone_call_click', {
+          'event_category': 'Contact',
+          'event_label': 'Header Phone Number'
+        });
+      }
+
+      // Track contact form submissions
+      function trackContactSubmission() {
+        gtag('event', 'contact_form_submit', {
+          'event_category': 'Lead Generation',
+          'event_label': 'Contact Form'
+        });
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" 
       href="/lovable-uploads/29552300-f3a8-4c72-b623-2fa2fc0e81a6.png">
