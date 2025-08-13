@@ -21,7 +21,7 @@ const App = () => (
       <Sonner />
       <Helmet>
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.trinityqualityservices.com" />
+        <link rel="canonical" href="https://trinityqualityservicesfl.com" />
       </Helmet>
       <BrowserRouter>
         <Routes>
